@@ -1,0 +1,202 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading ul{
+            display: inline-block;
+            background-color: rgb(23, 6, 255);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="heading">
+        <ul >
+            <li>Ishita's Portfolio</li>
+            <li>Home</li>
+            <li>About Me</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>Contact me</li>
+        </ul>
+    </header>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ishita | Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file for styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(128, 128, 128, 0.884);
+            color: black;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        section {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .section-title {
+            font-size: 2em;
+            color: black;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .project {
+            display: inline-block;
+            height: 30%;
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+            background-color: rgba(128, 128, 128, 0.884);
+            padding: 10px;
+            margin-top: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            object-fit:scale-down;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        #about img{
+            border-radius: 50%;
+            padding: 20px;
+        }
+        #details{
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        #skillist{
+            padding-left: 70px;
+            line-height: 25px;
+        }
+        #con{
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+        .pad{
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Ishita</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <table>
+            <tr>
+                <td>
+                    <img src="Profile_Photo.jpeg" alt="Profile_Photo">
+                </td>
+                <td id="details">
+                    <p>Hello! I'm Ishita, currently pursuing B.Tech in Computer Science and Engineering at KIET Group of Institutions.<br> Aspiring web developer. Have a strong background in HTML in web development field. Currently learning CSS and JavaScript. I am constantly learning new technologies and looking for opportunities to improve my skills.</p>
+                </td>
+            </tr>
+        </table>
+        
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <ul id="skillist">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C language</li>
+            <li>GitHub</li>
+            <li>Kotlin</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title" >My Projects</h2>
+        <div class="project">
+            <img src="Project1_Img1.PNG" alt="Project 1">
+            <h3>Cloth Store</h3>
+            <p> Made just by using basic HTML Tags.</p>
+        </div>
+        <div class="project">
+            <img src="Experiment4_img.PNG" alt="Project 2">
+            <h3>Registration form</h3>
+            <p>Given me in depth understanding of using form tag in html.</p>
+        </div>
+        <div class="project">
+            <img src="Experiment3(1)_Img1.PNG" alt="Project 3">
+            <h3>KIET Time Table </h3>
+            <p>Involves the usage of table tags.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title" id="con">Contact Me</h2>
+        <p class="pad">If you would like to work together or have any questions, feel free to reach out!</p>
+        <p class="pad">Email: <a href="mailto:ishita.2428cse940@kiet.edu">ishita.2428cse940@kiet.edu</a></p>
+        <p class="pad">LinkedIn: <a href="https://www.linkedin.com/in/ishita-garg-7a1475327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">www.linkedin.com/in/ishita-garg</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ishita. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
